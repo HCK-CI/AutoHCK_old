@@ -1,0 +1,639 @@
+[
+  {
+    "name": "Red Hat VirtIO Ethernet Adapter",
+    "install_method": "PNP",
+    "short": "NetKVM",
+    "device": {
+      "type": "network", 
+      "name": "virtio-net-pci",
+      "extra": ""
+    },
+    "inf": "netkvm.inf",
+    "support": true,
+    "platforms": [
+      {
+        "id": "10",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c2_name": "CL2",
+        "c1_cpus": "4",
+        "c2_cpus": "2",
+        "c1_memory": "4G",
+        "c2_memory": "2G",
+        "c1_port": "4002",
+        "c2_port": "4003",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "11",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c2_name": "CL2",
+        "c1_cpus": "4",
+        "c2_cpus": "2",
+        "c1_memory": "4G",
+        "c2_memory": "2G",
+        "c1_port": "4002",
+        "c2_port": "4003",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "12",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c2_name": "CL2",
+        "c1_cpus": "4",
+        "c2_cpus": "2",
+        "c1_memory": "4G",
+        "c2_memory": "2G",
+        "c1_port": "4002",
+        "c2_port": "4003",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "13",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c2_name": "CL2",
+        "c1_cpus": "4",
+        "c2_cpus": "2",
+        "c1_memory": "4G",
+        "c2_memory": "2G",
+        "c1_port": "4002",
+        "c2_port": "4003",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "VirtIO Balloon Driver",
+    "install_method": "PNP",
+    "short": "Balloon",
+    "device": {
+      "type": "balloon", 
+      "name": "virtio-balloon-pci",
+      "extra": ""
+    },
+    "inf": "balloon.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "14",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "15",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "16",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "17",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "VirtIO Input Driver",
+    "install_method": "PNP",
+    "short": "vioinput",
+    "device": {
+      "type": "vioinput", 
+      "name": "virtio-keyboard-pci",
+      "extra": ""
+    },
+    "inf": "vioinput.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "18",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "19",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "20",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "21",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "Red Hat VirtIO SCSI pass-through controller",
+    "install_method": "PNP",
+    "short": "vioscsi",
+    "device": {
+      "type": "storage-scsi", 
+      "name": "virtio-scsi-pci",
+      "extra": ""
+    },
+    "inf": "vioscsi.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "22",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "23",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "24",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c2_cpus": "2",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "25",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "VirtIO Serial Driver",
+    "install_method": "PNP",
+    "short": "vioserial",
+    "device": {
+      "type": "serial",
+      "name": "virtio-serial-pci",
+      "extra": ""
+    },
+    "inf": "vioser.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "26",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "27",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "28",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "29",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "Red Hat VirtIO SCSI Disk Device",
+    "install_method": "PNP",
+    "short": "viostor",
+    "device": {
+      "type": "storage-blk",
+      "name": "virtio-blk-pci",
+      "extra": ""
+    },
+    "inf": "viostor.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "30",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "31",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "32",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "33",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "QEMU PVPanic Device",
+    "install_method": "PNP",
+    "short": "pvpanic",
+    "device": {
+      "type": "pvpanic",
+      "name": "pvpanic",
+      "extra": ""
+    },
+    "inf": "pvpanic.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "34",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "35",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "36",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "37",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "VirtIO RNG Device",
+    "install_method": "PNP",
+    "short": "viorng",
+    "device": {
+      "type": "rng",
+      "name": "virtio-rng-pci",
+      "extra": ""
+    },
+    "inf": "viorng.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "38",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "39",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "40",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "41",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "IVSHMEM Device",
+    "install_method": "PNP",
+    "short": "ivshmem",
+    "device": {
+      "type": "ivshmem",
+      "name": "ivshmem-doorbell",
+      "extra": ""
+    },
+    "inf": "ivshmem.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "42",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "43",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "44",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "45",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  },
+  {
+    "name": "QEMU PVPanic Device",
+    "install_method": "PNP",
+    "short": "pvpanic",
+    "device": {
+      "type": "pvpanic",
+      "name": "pvpanic",
+      "extra": ""
+    },
+    "inf": "pvpanic.inf",
+    "support": false,
+    "platforms": [
+      {
+        "id": "46",
+        "name": "Win10x64",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "47",
+        "name": "Win10x86",
+        "kit": "HLK1709",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "48",
+        "name": "Win2016x64",
+        "kit": "HLK1607",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      },
+      {
+        "id": "49",
+        "name": "Win81x86",
+        "kit": "HCK",
+        "c1_name": "CL1",
+        "c1_cpus": "4",
+        "c1_memory": "4G",
+        "c1_port": "4002",
+        "world_net_device": "e1000e",
+        "ctrl_net_device": "e1000e",
+        "file_transfer_device": "e1000e"
+      }
+    ]
+  }
+]

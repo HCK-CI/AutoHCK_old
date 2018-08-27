@@ -1,0 +1,12 @@
+DHCP Server
+-----------
+In order to connect to the Studio machine in each HLK/HCK setup, we need to set up a DHCP server that will provide each studio with a unique IP address.  The server will assign the IP address according to the machine mac address with the following rule (replace XX with AutoHCK unique ID):
+
+56:00:XX:00:XX:dd > 192.168.0.XX
+
+There is more than one way to set up the DHCP Server, for now, we will be using openDHCP:
+http://dhcpserver.sourceforge.net
+The `opendhcpserverSetup.sh` script will download openDHCP, install it as a service and configure it with the required IP assignment rule.
+
+The script will also create a new bridge named 'br1'. If this bridge is already used, you can change its name.
+NOTE: you will need to change "WORLD_BR_NAME" in virtHCK config file to the bridge name.
